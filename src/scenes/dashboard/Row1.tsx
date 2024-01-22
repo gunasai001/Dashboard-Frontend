@@ -13,7 +13,7 @@ const Row1 = () => {
         const revenueExpenses = useMemo(() => {
           return (
             data && 
-            data[0].monthlyData.map(({month, revenue, expenses})=>{
+            data[0].monthlyData.map(({month, revenue, expenses}:{month:string, revenue:number, expenses:number})=>{
               return {
                 name: month.substring(0, 3), 
                 revenue: revenue, 
