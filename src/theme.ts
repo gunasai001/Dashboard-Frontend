@@ -51,6 +51,7 @@ export const tokens = {
         ...tokens.primary,
         main: tokens.primary[500],
         light: tokens.primary[400],
+        used: tokens.primary[300],
       },
       secondary: {
         ...tokens.secondary,

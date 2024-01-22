@@ -73,7 +73,7 @@ const Predictions = () => {
           />
           <Line type="monotone" dataKey="Regriession Line" stroke="#8884d8" dot={false}/>
           {isPredictions && (
-            <Line type="monotone" dataKey="Predicted Revenue" stroke={palette.secondary[500]} strokeDasharray="5 5"/>
+            <Line type="monotone" dataKey="Predicted Revenue" stroke={"#f2b455"} strokeDasharray="5 5"/>
           )}
         </LineChart>
       </ResponsiveContainer>

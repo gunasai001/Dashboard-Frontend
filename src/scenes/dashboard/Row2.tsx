@@ -13,14 +13,14 @@ const pieData = [
 
 const Row2 = () => {
   const { palette } = useTheme();
-  const pieColor = [palette.primary[800], palette.primary[300]];
+  const pieColor = ["#076050", "#71f5de"];
   const { data: operationalData } = useGetKpisQuery();
   const {data: productData} = useGetProductsQuery();
 
   const operationalExpenses = useMemo(() => {
     return (
       operationalData && 
-      operationalData[0].monthlyData.map(({month, operationalExpenses, nonOperationalExpenses})=>{
+      operationalData[0].monthlyData.map(({month, operationalExpenses, nonOperationalExpenses}:{month:string, operationalExpenses:number, nonOperationalExpenses:number})=>{
         return {
           name: month.substring(0, 3), 
           "Operational Expenses": operationalExpenses,
@@ -102,7 +102,7 @@ const Row2 = () => {
       </PieChart>
       <Box ml="-0.7rem" flexBasis="40%" textAlign="center">
             <Typography variant="h5">Target Sales</Typography>
-            <Typography m="0.3rem 0" variant="h3" color={palette.primary[300]}>83</Typography>
+            <Typography m="0.3rem 0" variant="h3" color={"#71f5de"}>83</Typography>
             <Typography variant="h6" >Finance goals oth the campaign that is desired</Typography>
       </Box>
       <Box flexBasis="40%" >
