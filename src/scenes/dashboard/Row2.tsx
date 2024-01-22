@@ -67,7 +67,7 @@ const Row2 = () => {
           <Tooltip />
           
           <Line 
-            yAxisId="left" type="monotone" dataKey="Non Operational Expenses" stroke={palette.tertiary[500]}
+            yAxisId="left" type="monotone" dataKey="Non Operational Expenses" stroke={"#8884d8"}
           />
           <Line yAxisId="right" type="monotone" dataKey="Operational Expenses" stroke={palette.primary.main} />
         </LineChart>
@@ -133,7 +133,7 @@ const Row2 = () => {
           <YAxis type="number" dataKey="expense" name="expense" axisLine={false} tickLine={false} style={{fontSize: "10px"}} tickFormatter={(v)=> `$${v}`}/>
           <ZAxis type="number" range={[20]}/>
           <Tooltip formatter={(v)=>`$${v}`} />
-          <Scatter name="Product Expense Ratio" data={productExpenseData} fill={palette.tertiary[500]} />
+          <Scatter name="Product Expense Ratio" data={productExpenseData} fill={"#8884d8"} />
         </ScatterChart>
       </ResponsiveContainer>
 

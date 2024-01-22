@@ -109,7 +109,7 @@ const Row1 = () => {
             margin: '0 0 10px 0'
           }} />
           <Line 
-            yAxisId="left" type="monotone" dataKey="profit" stroke={palette.tertiary[500]}
+            yAxisId="left" type="monotone" dataKey="profit" stroke={"#8884d8"}
           />
           <Line yAxisId="right" type="monotone" dataKey="revenue" stroke={palette.primary.main} />
         </LineChart>
